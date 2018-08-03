@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "task manager": "bafyc-aog-task-scheduler",
+    "default": "bafyc-aog-task-scheduler"
+  }
+}
