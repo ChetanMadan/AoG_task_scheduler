@@ -1,0 +1,36 @@
+[debug] [2019-01-02T15:55:46.451Z] ----------------------------------------------------------------------
+[debug] [2019-01-02T15:55:46.453Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2019-01-02T15:55:46.453Z] CLI Version:   4.0.0
+[debug] [2019-01-02T15:55:46.453Z] Platform:      linux
+[debug] [2019-01-02T15:55:46.453Z] Node Version:  v8.11.3
+[debug] [2019-01-02T15:55:46.453Z] Time:          Wed Jan 02 2019 21:25:46 GMT+0530 (IST)
+[debug] [2019-01-02T15:55:46.453Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-01-02T15:55:46.460Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-01-02T15:55:46.460Z] > authorizing via signed-in user
+[debug] [2019-01-02T15:55:46.461Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bafyc-aog-task-scheduler  
+  
+ Wed Jan 02 2019 21:25:46 GMT+0530 (IST)
+[debug] [2019-01-02T15:56:06.513Z] Error: getaddrinfo ENOTFOUND admin.firebase.com admin.firebase.com:443
+    at errnoException (dns.js:50:10)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND admin.firebase.com admin.firebase.com:443
+[debug] [2019-01-02T15:56:11.003Z] ----------------------------------------------------------------------
+[debug] [2019-01-02T15:56:11.005Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2019-01-02T15:56:11.005Z] CLI Version:   4.0.0
+[debug] [2019-01-02T15:56:11.005Z] Platform:      linux
+[debug] [2019-01-02T15:56:11.005Z] Node Version:  v8.11.3
+[debug] [2019-01-02T15:56:11.005Z] Time:          Wed Jan 02 2019 21:26:11 GMT+0530 (IST)
+[debug] [2019-01-02T15:56:11.005Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-01-02T15:56:11.011Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-01-02T15:56:11.012Z] > authorizing via signed-in user
+[debug] [2019-01-02T15:56:11.013Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bafyc-aog-task-scheduler  
+  
+ Wed Jan 02 2019 21:26:11 GMT+0530 (IST)
+[debug] [2019-01-02T15:56:31.066Z] Error: getaddrinfo ENOTFOUND admin.firebase.com admin.firebase.com:443
+    at errnoException (dns.js:50:10)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND admin.firebase.com admin.firebase.com:443

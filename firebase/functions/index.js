@@ -28,24 +28,24 @@ var admin = require('firebase-admin')
 
 var database = firebase.database();
 var ref = firebase.database().ref().child('user_id/');
-var userRef=ref.child('market/');
-//var dur;
+var userRef=ref.child('go to the market/');
+var dur;
 
 app.intent('suggest_task' , (conv, {dur}) => {
-  var snapi="fefe";
-  userRef.once("value").then(function(snap){
-   var dur=snap.val();
-   
-   dur=dur+"fe";
-  });
-   conv.close(`output and ${dur}`);
+  userRef.on('value' , function(snapshot){
+   dur=snapshot.val();
+    
+   var dura=dur['status'];
 
+   conv.close(`output and ${dura}`);
+  });
 });
 
 
 
 app.intent('add_task',(conv, {duration, task})=>{
   conv.ask(`How important is it for you?`);
+
 
 app.intent('add_priority',(conv,{priority}) => {
 
