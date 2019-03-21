@@ -11,15 +11,13 @@ var firebase = require('firebase')
 const {dialogflow} = require('actions-on-google');
 const app = dialogflow({debug : true});
 var admin = require('firebase-admin')
- 
-
   // Set the configuration for your app
   // TODO: Replace with your project's config object
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAN9Q_koHAN5kKAVKmjLsGtCSvoK_3R2iI",
     authDomain: "bafyc-aog-task-scheduler.firebaseapp.com",
-    databaseURL: "https://bafyc-aog-task-scheduler.firebaseio.com",
+    databaseURL: "ws://bafyc-aog-task-scheduler.firebaseio.com/",
     projectId: "bafyc-aog-task-scheduler",
     storageBucket: "bafyc-aog-task-scheduler.appspot.com",
     messagingSenderId: "288282293009"
@@ -28,24 +26,25 @@ var admin = require('firebase-admin')
 
 var database = firebase.database();
 var ref = firebase.database().ref().child('user_id/');
-var userRef=ref.child('go to the market/');
-var dur;
 
-app.intent('suggest_task' , (conv, {dur}) => {
-  userRef.on('value' , function(snapshot){
-   dur=snapshot.val();
+
+app.intent('suggest_task' , (conv,{dur}) => {
+  
+   return admin.database.ref('user_id').once("value").then((snapshot)=>{
+     //var dur = (snapshot.val() && snapshot.val().priority) || "Dont know";
+     //var dur = snapshot.child("study").val();
+     var dur = user_id.study.priority;
+     console.log(dur);
+     conv.close(`output and ${dur}`);
+   });
     
-   var dura=dur['status'];
-
-   conv.close(`output and ${dura}`);
-  });
+   //var dura=dur['status'];
 });
 
 
 
 app.intent('add_task',(conv, {duration, task})=>{
   conv.ask(`How important is it for you?`);
-
 
 app.intent('add_priority',(conv,{priority}) => {
 
