@@ -12,3 +12,8 @@ Demo actions on google project using python client library aog.
 - Run main.py ```python3 main.py```
 - Open a new terminal and run ngrok ```ngrok http 5000```
 - use the https adress for webhook. 
+
+inside folder: python_task_scheduler 
+```git push heroku master``` 
+URL: [Deployment URL](http://task-scheduler1.herokuapp.com) 
+Changes to be done in main.py 
