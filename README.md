@@ -1,4 +1,4 @@
-# Demo Actions on Google project for python client library aog 
+# Demo Actions on Google project for python client library aog
 Demo actions on google project using python client library aog.
 
 ## How to
@@ -11,12 +11,12 @@ Demo actions on google project using python client library aog.
 - Download and install ngrok from [here](https://ngrok.com/download).
 - Run main.py ```python3 main.py```
 - Open a new terminal and run ngrok ```ngrok http 5000```
-- use the https adress for webhook. 
+- use the https adress for webhook.
 
-inside folder: python_task_scheduler 
+inside folder: python_task_scheduler
 
-```git push heroku master``` 
+```git push heroku master```
 
-URL: [Deployment URL](http://task-scheduler1.herokuapp.com) 
+URL: [Deployment URL](http://task-scheduler1.herokuapp.com)
 
 Changes to be done in main.py 
