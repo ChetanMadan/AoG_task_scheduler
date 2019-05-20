@@ -1,5 +1,5 @@
-# Demo Actions on Google project for python client library aog
-Demo actions on google project using python client library aog.
+# Actions on Google project for python client library aog
+Actions on google project using python client library aog.
 
 ## How to
 
